@@ -1,8 +1,8 @@
 <?php
 function getDatabaseConnection() {
     $dsn = "mysql:host=localhost;dbname=projet-php;charset=utf8;port=3306";
-    $user = "root";
-    $pass = "";
+    $user = "osm";
+    $pass = "osm";
 
     try {
         $pdo = new PDO($dsn, $user, $pass, [
