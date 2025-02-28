@@ -24,11 +24,11 @@ if (isset($routes[$page])) {
         if (method_exists($controller, $method)) {
             $controller->$method();
         } else {
-            require_once __DIR__ . '/views/404.php';
+            require_once __DIR__ . '/../views/404.php';
         }
     } else {
-        require_once __DIR__ . '/views/404.php';
+        require_once __DIR__ . '/../views/404.php';
     }
 } else {
-    require_once __DIR__ . '/views/404.php';
+    require_once __DIR__ . '/../views/404.php';
 }
